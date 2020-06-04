@@ -141,7 +141,7 @@ public class YahooBenchmark {
             windowedEvents.trigger(new EventAndProcessingTimeTrigger(triggerIntervalMs));
         }
 
-        SingleOutputStreamOperator<WindowedCount> fold = windowedEvents.fold(
+      /*  SingleOutputStreamOperator<WindowedCount> fold = windowedEvents.fold(
                 new WindowedCount(null, "", 0, new Timestamp(0L)),
                 (accumulator, value) -> {
                     Timestamp lastUpdate;
@@ -164,7 +164,36 @@ public class YahooBenchmark {
                                 windowedCount.lastUpdate));
                     }
                 }
-        );
+        );*/
+
+        SingleOutputStreamOperator<WindowedCount> fold = windowedEvents.fold(
+                new WindowedCount(null, "", 0, new Timestamp(0L)),
+                new FoldFunction<JoinedEventWithCampaign, WindowedCount>() {
+                    @Override
+                    public WindowedCount fold(WindowedCount accumulator, JoinedEventWithCampaign value) throws Exception {
+                        Timestamp lastUpdate;
+                        if (accumulator.lastUpdate.getTime() < value.eventTime.getTime()) {
+                            lastUpdate = value.eventTime;
+                        } else {
+                            lastUpdate = accumulator.lastUpdate;
+                        }
+                        accumulator.count += 1;
+                        accumulator.lastUpdate = lastUpdate;
+                        return accumulator;
+                    }
+                },
+                new WindowFunction<WindowedCount, WindowedCount, String, TimeWindow>() {
+                    @Override
+                    public void apply(String campaignId, TimeWindow window, Iterable<WindowedCount> input, Collector<WindowedCount> out) throws Exception {
+                        for (WindowedCount windowedCount : input) {
+                            out.collect(new WindowedCount(
+                                    new Timestamp(window.getStart()),
+                                    campaignId,
+                                    windowedCount.count,
+                                    windowedCount.lastUpdate));
+                        }
+                    }
+                });
 
         fold.name("YahooWindowOperator");
 
