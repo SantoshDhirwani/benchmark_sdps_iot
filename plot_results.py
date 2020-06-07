@@ -84,12 +84,22 @@ def build_chart(name, labels, latency, messages_per_second):
     plt.rcParams['axes.titlepad'] = 20
 
     title = CHART_TITLE.format(mps=messages_per_second)
-    plt.title(title, {
+
+    fig, ax = plt.subplots()
+
+    y_pos = range(len(labels))
+
+    ax.barh(y_pos, latency, align='center')
+    ax.set_yticks(y_pos)
+    ax.set_yticklabels(labels)
+    ax.invert_yaxis()
+    ax.set_xlabel('Latency')
+    ax.set_title(title, {
         "fontsize": 26,
     })
-    plt.plot(latency)
-    plt.ylabel('Latency')
-    plt.xticks(range(0, len(labels)), labels, rotation=30)
+
+    for i, v in enumerate(latency):
+        ax.text(v + 3, i + .45, str(v), color='blue', fontweight='bold')
 
     plt.savefig(os.path.join(CURRENT_DIR, OUTPUT_FILENAME.format(name=name)))
 
