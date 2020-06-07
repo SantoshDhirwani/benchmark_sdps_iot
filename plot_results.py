@@ -71,8 +71,11 @@ def load_source():
 
         with open(os.path.join(last_generated_folder, filename), encoding="utf-8", errors="ignore") as fp:
             for row in csv.reader(fp, delimiter=","):
-                labels.append(str(datetime.fromtimestamp(int(row[3]) // 1000)))
+                labels.append(datetime.fromtimestamp(int(row[3]) // 1000))
                 latency.append(int(row[2]))
+
+    labels.sort()
+    labels = [str(l) for l in labels]
 
     return folder_name, labels, latency
 
@@ -92,14 +95,14 @@ def build_chart(name, labels, latency, messages_per_second):
     ax.barh(y_pos, latency, align='center')
     ax.set_yticks(y_pos)
     ax.set_yticklabels(labels)
-    ax.invert_yaxis()
+    # ax.invert_yaxis()
     ax.set_xlabel('Latency')
     ax.set_title(title, {
         "fontsize": 26,
     })
 
     for i, v in enumerate(latency):
-        ax.text(v + 3, i + .45, str(v), color='blue', fontweight='bold')
+        ax.text(v + 3, i - .45, str(v), color='blue', fontweight='bold')
 
     plt.savefig(os.path.join(CURRENT_DIR, OUTPUT_FILENAME.format(name=name)))
 
