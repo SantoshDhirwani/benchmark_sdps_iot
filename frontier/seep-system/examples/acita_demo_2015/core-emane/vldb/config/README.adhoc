@@ -1,0 +1,20 @@
+To configure bowfell to join the ad-hoc network:
+
+sudo stop network-manager
+cp vldb/config/bowfell-etc-NetworkManager.conf /etc/NetworkManager/NetworkManager.conf
+cp vldb/config/etc-network-interfaces.adhoc.bowfell /etc/network/interfaces
+cp vldb/config/olsrd.conf.adhoc.bowfell /etc/olsrd/olsrd.conf
+
+ifdown wlan0
+ifup wlan0
+
+olsrd -i wlan0 
+
+For some reason I can only get the wifi dongle to work for a 3.x kernel (i.e. Ubuntu 14.04).
+
+bowfell> uname -a
+Linux bowfell.doc.ic.ac.uk 3.13.0-119-generic #166-Ubuntu SMP Wed May 3 12:18:55 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+
+
+For apt-get update on a pi via ssh proxy:
+https://www.linuxquestions.org/questions/linux-networking-3/tunnel-apt-traffic-over-ssh-4175605999/

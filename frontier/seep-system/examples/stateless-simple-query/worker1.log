@@ -1,0 +1,216 @@
+17:48:55.820 [main] DEBUG uk.ac.imperial.lsds.seep.GLOBALS - Loading GLOBALS...
+17:48:55.823 [main] INFO  uk.ac.imperial.lsds.seep.GLOBALS - Loaded global properties={replicatedSinksHashRouting=backpressure, reprocessNonLocals=false, rateLimitConnections=false, chainLength=1, monitorInterval=5, recordImages=false, costThreshold=40.0, routeRecomputeIntervalSec=10, minimumNodesAvailable=10, ctrlSocketBufSize=2048, enableFrontierRouting=true, srcOutputQueueTimestamps=false, routingCtrlDelay=1000, ackEmitInterval=3000, synchronousOutput=true, enableAutomaticScaleOut=true, monitorManagerPort=5555, coreMainAddr=172.16.1.2, multiHopReplayOptimization=true, disableBackup=true, queryType=fdr, INIT=true, packetSize=16000, socketBufferSize=16384, sinkScaleFactor=1, extraProps=../extraConfig.properties, reorderImages=false, costExponent=2.0, srcMaxBufferMB=20, resizeImages=false, fctrlEmitInterval=1000, minimumTimeBetweenSplit=6, maxTotalQueueSizeTuples=100, fanin=2, trySendAlternativesTimeout=3000, enableLatencyBreakdown=false, socketConnectTimeout=10000, reliability=exactlyOnce, useCoreAddr=, TTT=FALSE, tupleSize=10, maxSrcTotalQueueSizeTuples=1, enableHardReplay=true, scheduledPauses=false, bestEffortAcks=true, numTuples=86, downstreamsUnroutableTimeout=3000, trySendTimeout=500, frameRate=1, batchLimit=1, enableFailureCtrlWatchdog=true, reportMaxSrcTotalQueueSizeTuples=false, warmUpTuples=0, abortOnNodePoolEmpty=true, enableTupleTracking=true, repoDir=/home/scary/Sources/frontier, sendIndefinitely=true, eftMechanismEnabled=true, net-routing=OLSRETX, piggybackControlTraffic=true, eagerPurgeOpQueue=false, dataSocket=40000, baseId=50, enableSinkDisplay=false, abortSessionTimeoutSec=300, numMaxAlerts=2, barrierTimeout=0, controlSocket=50000, fileWithCpuU=OUT, ownPort=3500, optimizeReplay=true, netAwareDispatcher=true, enableGUI=false, sources=1, maxLatencyAllowed=250, reconnectBackoff=100, separateControlNet=false, multicoreSupport=false, tupleSizeChars=500, initialPause=1000, rateLimitSrc=false, enableBatchRetransmitTimeouts=false, stateChunkSize=500000, sourceShutdownPause=300, ackWorkerActive=false , replicationFactor=1, sendDummyUpDownControlTraffic=false, sinks=1, readyQueueLength=10, retransmitTimeout=3000, sendDummyDownUpControlTraffic=false, skewLimit=0, boundReadyQueue=false, scaleOutSinks=true, fctrlWorkerActive=true, cpuUThreshold=50, autoReconnectChannel=true, mainPort=3500, boundFrontierRoutingQueues=true, blindSocket=60000, resourcesInJar=false, enableUpstreamRoutingControl=false, failureCtrlTimeout=3000, testFramesDir=images0.5, periodicFctrlsOnly=true, ftDiskMode=true, defaultProcessingDelay=0, mergeFailureAndRoutingCtrl=true, parallelRecovery=true, inputQueueLength=100, restrictRetransmitConstrained=false, ignoreQueueLengths=false, disableBackpressureETX=false, requirePositiveAggregates=false, piAdHocDeployment=true, checkpointMode=light-state, frontierRouting=backpressure, enableDownstreamsUnroutable=false, sendDummyFailureControlTraffic=false, noBufferSave=false, mainAddr=127.0.0.1}
+17:48:55.823 [main] DEBUG uk.ac.imperial.lsds.seep.GLOBALS - Loading GLOBALS...Done
+17:48:55.823 [main] INFO  uk.ac.imperial.lsds.seep.GLOBALS - java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+17:48:55.823 [main] INFO  uk.ac.imperial.lsds.seep.Main - Bind address=/127.0.0.1
+17:48:55.823 [main] INFO  uk.ac.imperial.lsds.seep.Main - globalProps={replicatedSinksHashRouting=backpressure, reprocessNonLocals=false, rateLimitConnections=false, chainLength=1, monitorInterval=5, recordImages=false, costThreshold=40.0, routeRecomputeIntervalSec=10, minimumNodesAvailable=10, ctrlSocketBufSize=2048, enableFrontierRouting=true, srcOutputQueueTimestamps=false, routingCtrlDelay=1000, ackEmitInterval=3000, synchronousOutput=true, enableAutomaticScaleOut=true, monitorManagerPort=5555, coreMainAddr=172.16.1.2, multiHopReplayOptimization=true, disableBackup=true, queryType=fdr, INIT=true, packetSize=16000, socketBufferSize=16384, sinkScaleFactor=1, extraProps=../extraConfig.properties, reorderImages=false, costExponent=2.0, srcMaxBufferMB=20, resizeImages=false, fctrlEmitInterval=1000, minimumTimeBetweenSplit=6, maxTotalQueueSizeTuples=100, fanin=2, trySendAlternativesTimeout=3000, enableLatencyBreakdown=false, socketConnectTimeout=10000, reliability=exactlyOnce, useCoreAddr=, TTT=FALSE, tupleSize=10, maxSrcTotalQueueSizeTuples=1, enableHardReplay=true, scheduledPauses=false, bestEffortAcks=true, numTuples=86, downstreamsUnroutableTimeout=3000, trySendTimeout=500, frameRate=1, batchLimit=1, enableFailureCtrlWatchdog=true, reportMaxSrcTotalQueueSizeTuples=false, warmUpTuples=0, abortOnNodePoolEmpty=true, enableTupleTracking=true, repoDir=/home/scary/Sources/frontier, sendIndefinitely=true, eftMechanismEnabled=true, net-routing=OLSRETX, piggybackControlTraffic=true, eagerPurgeOpQueue=false, dataSocket=40000, baseId=50, enableSinkDisplay=false, abortSessionTimeoutSec=300, numMaxAlerts=2, barrierTimeout=0, controlSocket=50000, fileWithCpuU=OUT, ownPort=3500, optimizeReplay=true, netAwareDispatcher=true, enableGUI=false, sources=1, maxLatencyAllowed=250, reconnectBackoff=100, separateControlNet=false, multicoreSupport=false, tupleSizeChars=500, initialPause=1000, rateLimitSrc=false, enableBatchRetransmitTimeouts=false, stateChunkSize=500000, sourceShutdownPause=300, ackWorkerActive=false , replicationFactor=1, sendDummyUpDownControlTraffic=false, sinks=1, readyQueueLength=10, retransmitTimeout=3000, sendDummyDownUpControlTraffic=false, skewLimit=0, boundReadyQueue=false, scaleOutSinks=true, fctrlWorkerActive=true, cpuUThreshold=50, autoReconnectChannel=true, mainPort=3500, boundFrontierRoutingQueues=true, blindSocket=60000, resourcesInJar=false, enableUpstreamRoutingControl=false, failureCtrlTimeout=3000, testFramesDir=images0.5, periodicFctrlsOnly=true, ftDiskMode=true, defaultProcessingDelay=0, mergeFailureAndRoutingCtrl=true, parallelRecovery=true, inputQueueLength=100, restrictRetransmitConstrained=false, ignoreQueueLengths=false, disableBackpressureETX=false, requirePositiveAggregates=false, piAdHocDeployment=true, checkpointMode=light-state, frontierRouting=backpressure, enableDownstreamsUnroutable=false, sendDummyFailureControlTraffic=false, noBufferSave=false, mainAddr=127.0.0.1}
+17:48:55.825 [main] INFO  u.a.i.l.s.infrastructure.NodeManager - Interface wlo1 wlo1
+17:48:55.825 [main] INFO  u.a.i.l.s.infrastructure.NodeManager - New preferred interface wlo1 with match index -1
+17:48:55.825 [main] INFO  u.a.i.l.s.infrastructure.NodeManager - Ignoring IPv6 address /fe80:0:0:0:6de1:aed4:21b6:1937%wlo1
+17:48:55.825 [main] INFO  u.a.i.l.s.infrastructure.NodeManager - New preferred address /192.168.1.194
+17:48:55.825 [main] INFO  u.a.i.l.s.infrastructure.NodeManager - Interface lo lo
+17:48:55.825 [main] INFO  u.a.i.l.s.infrastructure.NodeManager - New preferred interface lo with match index 2
+17:48:55.825 [main] INFO  u.a.i.l.s.infrastructure.NodeManager - Ignoring IPv6 address /0:0:0:0:0:0:0:1%lo
+17:48:55.825 [main] INFO  u.a.i.l.s.infrastructure.NodeManager - New preferred address /127.0.0.1
+17:48:55.825 [main] INFO  u.a.i.l.s.infrastructure.NodeManager - Choosing wireless net data/control ip=/127.0.0.1
+17:48:55.830 [main] INFO  uk.ac.imperial.lsds.seep.Main - Initializing Node Manager...
+17:48:55.833 [main] INFO  u.a.i.l.s.infrastructure.NodeManager - Waiting for incoming requests on port: 3501
+17:48:55.833 [main] INFO  u.a.i.l.s.c.NodeManagerCommunication - --> Boot Info: bootstrap 127.0.0.1 127.0.0.1 3501
+ to: /127.0.0.1 on: 3500
+17:49:02.032 [main] DEBUG u.a.i.l.s.infrastructure.NodeManager - Tokens received: CODE
+17:49:02.032 [main] INFO  u.a.i.l.s.infrastructure.NodeManager - -> CODE Command
+17:49:02.032 [main] INFO  u.a.i.l.s.infrastructure.NodeManager - -> Waiting for receiving the CODE...
+17:49:02.032 [main] INFO  u.a.i.l.s.infrastructure.NodeManager - -> CODE received completely
+17:49:02.033 [main] INFO  u.a.i.l.s.infrastructure.NodeManager - -> Loading CODE from: /home/scary/Sources/frontier/seep-system/examples/stateless-simple-query/3501query.jar
+Loading into class loader: file:/home/scary/Sources/frontier/seep-system/examples/stateless-simple-query/3501query.jar
+17:49:02.098 [main] DEBUG u.a.i.l.s.infrastructure.NodeManager - -> Received Unknown Class -> uk.ac.imperial.lsds.seep.operator.Operator <- Using custom class loader to resolve it
+17:49:02.148 [main] ERROR u.a.i.l.s.i.d.RuntimeClassLoader - This URL: file:/home/scary/Sources/frontier/seep-system/examples/stateless-simple-query/3501query.jar
+17:49:02.148 [main] ERROR u.a.i.l.s.i.d.RuntimeClassLoader - When trying to load: [Ljava.lang.Integer;
+17:49:02.155 [main] DEBUG u.a.i.l.s.infrastructure.NodeManager - -> OPERATOR resolved, OP-ID: -1
+17:49:02.156 [main] INFO  u.a.i.l.s.infrastructure.NodeManager - -> Node Monitor running for operatorId=-1
+17:49:02.164 [main] INFO  u.a.i.l.s.p.StatelessProcessingUnit - -> Instantiating Operator...
+17:49:02.169 [main] INFO  u.a.i.l.s.processingunit.Dispatcher - canRetransmitConstrained=true
+17:49:02.170 [main] INFO  u.a.i.l.s.processingunit.Dispatcher - limitUnacked=false,maxUnacked=99
+
+17:49:02.170 [main] DEBUG u.a.i.l.s.p.StatelessProcessingUnit - Operator: Operator [operatorId=-1, opContext= @node: Node [ip=/127.0.0.1, controlIp=/127.0.0.1, masterCommsIp=/127.0.0.1, port=3501]inC: 49999inD: 39999 down: [Id: 1node: Node [ip=/127.0.0.1, controlIp=/127.0.0.1, masterCommsIp=/127.0.0.1, port=3502]inC: 50001inD: 40001]]
+17:49:02.170 [main] INFO  u.a.i.l.s.p.StatelessProcessingUnit - -> Instantiating Operator...DONE
+17:49:02.204 [main] INFO  u.a.i.l.s.p.StatelessProcessingUnit - -> Setting operator ready
+17:49:02.204 [main] INFO  u.a.i.lsds.seep.runtimeengine.CoreRE - -> All operators in this unit are ready. Initializing communications...
+17:49:02.215 [main] INFO  u.a.i.l.s.r.OutputQueueWorker - OutputQueue worker merging failure and routing ctrl? false
+17:49:02.216 [main] INFO  u.a.i.lsds.seep.runtimeengine.CoreRE - Control queues: {}
+17:49:02.217 [main] INFO  u.a.i.l.s.comm.IncomingDataHandler -  -> ctrl queues = {}
+17:49:02.219 [dataHandlerT] INFO  u.a.i.l.s.comm.IncomingDataHandler - -> IncomingDataHandler listening in port: 39999
+17:49:02.219 [dataHandlerT] INFO  u.a.i.l.s.comm.IncomingDataHandler - idh socket receiver buffer size = 16384
+17:49:02.227 [main] DEBUG u.a.i.l.s.infrastructure.NodeManager - Tokens received: SET-RUNTIME
+17:49:02.227 [main] INFO  u.a.i.l.s.infrastructure.NodeManager - -> SET-RUNTIME Command
+17:49:02.227 [main] DEBUG u.a.i.lsds.seep.runtimeengine.CoreRE - -> Configuring remote connections...
+17:49:02.227 [main] DEBUG u.a.i.l.s.processingunit.PUContext - -> configuring downstream of 1
+17:49:02.227 [main] DEBUG u.a.i.l.s.processingunit.PUContext - -> Trying remote deferred downstream conn to: /127.0.0.1/40001
+17:49:02.230 [main] INFO  u.a.i.l.s.r.SynchronousCommunicationChannel - Starting deferred init to /127.0.0.1
+17:49:02.230 [main] INFO  u.a.i.l.s.r.SynchronousCommunicationChannel - Skipping deferred init to /127.0.0.1
+17:49:02.230 [main] DEBUG u.a.i.l.s.processingunit.PUContext - -> New remote downstream (SYNC) conn to OP: 
+17:49:02.230 [main] WARN  u.a.i.l.s.p.StatelessProcessingUnit - Using hash routing since no replication.
+17:49:02.231 [main] INFO  u.a.i.l.s.p.StatelessProcessingUnit - Using hash routing.
+17:49:02.232 [main] INFO  u.a.i.l.s.processingunit.Dispatcher - Set dispatcher output queues and started dispatcher workers.
+17:49:02.232 [main] DEBUG u.a.i.lsds.seep.runtimeengine.CoreRE - -> CONFIGURING SYSTEM WITH A SYNCHRONOUS OUTPUT
+17:49:02.232 [main] DEBUG u.a.i.lsds.seep.runtimeengine.CoreRE - -> SYSTEM CONFIGURED FOR NO MULTICORE
+17:49:02.232 [dataConsumerT] INFO  u.a.i.l.s.runtimeengine.DataConsumer - 1 input data ingestion mode.
+17:49:02.232 [dataConsumerT] ERROR u.a.i.l.s.runtimeengine.DataConsumer - Unknown dso type.
+17:49:02.232 [Thread-1] INFO  u.a.i.l.s.r.SynchronousCommunicationChannel - Reopening downstream data socket
+17:49:02.232 [Thread-1] INFO  u.a.i.l.s.r.SynchronousCommunicationChannel - Trying a deferred init of data channel to /127.0.0.1
+17:49:02.232 [Thread-1] INFO  u.a.i.l.s.r.SynchronousCommunicationChannel - Successfully connected data channel to /127.0.0.1
+17:49:02.233 [Thread-1] INFO  u.a.i.l.s.r.SynchronousCommunicationChannel - Socket send buffer size= 1313280
+17:49:02.233 [Thread-1] INFO  u.a.i.l.s.r.SynchronousCommunicationChannel - Socket set send buffer size= 16384
+17:49:02.233 [Thread-1] DEBUG u.a.i.l.s.r.OutputQueueWorker - Op -1 connected to downstream: 1
+17:49:02.233 [DispatcherWorker-1] INFO  u.a.i.l.s.processingunit.Dispatcher - Dispatcher worker initial reconnect complete.
+17:49:02.239 [main] DEBUG u.a.i.lsds.seep.runtimeengine.CoreRE - -> Node 15713194 instantiated
+17:49:02.239 [main] WARN  u.a.i.lsds.seep.runtimeengine.CoreRE - -> If this node is not the most upstream, there is a problem
+17:49:02.239 [main] WARN  u.a.i.lsds.seep.runtimeengine.CoreRE - Using hash routing since no replication.
+17:49:02.239 [main] INFO  u.a.i.lsds.seep.runtimeengine.CoreRE - Starting OLSRETX net rate monitor.
+17:49:02.240 [chw-/127.0.0.1-T-0] ERROR u.a.i.l.s.comm.ControlHandlerWorker - -> ControlHandlerWorker. IO Error Buffer underflow.
+17:49:02.240 [main] INFO  u.a.i.lsds.seep.manet.NetRateMonitor - Net rate monitor using up op id to addr mapping: {}
+com.esotericsoftware.kryo.KryoException: Buffer underflow.
+	at com.esotericsoftware.kryo.io.Input.require(Input.java:181)
+	at com.esotericsoftware.kryo.io.Input.readVarInt(Input.java:355)
+	at com.esotericsoftware.kryo.Kryo.readReferenceOrNull(Kryo.java:794)
+	at com.esotericsoftware.kryo.Kryo.readObject(Kryo.java:655)
+	at uk.ac.imperial.lsds.seep.comm.ControlHandlerWorker.socketRead(ControlHandlerWorker.java:189)
+	at uk.ac.imperial.lsds.seep.comm.ControlHandlerWorker.run(ControlHandlerWorker.java:137)
+	at java.lang.Thread.run(Thread.java:748)
+17:49:02.241 [main] INFO  u.a.i.l.s.processingunit.Dispatcher - Started dispatcher main.
+17:49:02.241 [main] INFO  u.a.i.lsds.seep.runtimeengine.CoreRE - -> Node 15713194 comm initialized
+17:49:02.246 [NetRateMonitor] INFO  u.a.i.lsds.seep.manet.NetRateMonitor - Read routes: []
+17:49:02.246 [NetRateMonitor] INFO  u.a.i.lsds.seep.manet.NetRateMonitor - Parsing OLSRETX routes
+17:49:02.246 [NetRateMonitor] INFO  u.a.i.lsds.seep.manet.NetRateMonitor - Checking routes against upOpIds: {}
+17:49:02.246 [NetRateMonitor] INFO  u.a.i.lsds.seep.manet.NetRateMonitor - Up op costs: {}
+17:49:02.271 [main] DEBUG u.a.i.l.s.infrastructure.NodeManager - Tokens received: START
+17:49:02.271 [main] INFO  u.a.i.l.s.infrastructure.NodeManager - -> START Command
+17:49:02.271 [Thread-2] INFO  u.a.i.lsds.seep.runtimeengine.CoreRE - -> Starting to process data (asynchronous)...
+17:49:02.271 [Thread-2] INFO  u.a.i.l.seep.operator.DistributedApi - Declared working attributes = [value1, value2, value3]
+17:49:02.271 [Thread-2] INFO  u.a.i.l.seep.operator.DistributedApi - Mapper = {value2=1, value1=0, value3=2}
+17:49:02.272 [Thread-2] DEBUG u.a.i.l.s.r.OutputQueueWorker - Setting data with ts=1593812942272
+17:49:02.272 [Thread-1] DEBUG u.a.i.l.s.r.OutputQueueWorker - Op -1 exchanged ctrlData for 1
+17:49:02.272 [Thread-1] INFO  u.a.i.l.s.r.OutputQueueWorker - t=1593812942272, oq.sync -1 sending ts=1593812942272 for 1, current latency=0, oq latency=0
+17:49:02.272 [Thread-1] DEBUG u.a.i.l.s.r.OutputQueueWorker - No coalescing for 1: 0.0
+17:49:02.272 [Thread-1] ERROR u.a.i.l.s.r.OutputQueueWorker - Writing batch to 1 failed, ts=1593812942272, com.esotericsoftware.kryo.KryoException: java.net.SocketException: Socket closed
+17:49:02.273 [Thread-1] DEBUG u.a.i.l.s.r.OutputQueueWorker - Op -1 sent ctrlData for 1, success=false
+17:49:02.273 [Thread-1] INFO  u.a.i.l.s.r.SynchronousCommunicationChannel - Reopening downstream data socket
+17:49:02.273 [Thread-1] INFO  u.a.i.l.s.r.SynchronousCommunicationChannel - Existing downstream data socket not null: /127.0.0.1
+com.esotericsoftware.kryo.KryoException: java.net.SocketException: Socket closed
+	at com.esotericsoftware.kryo.io.Output.flush(Output.java:165)
+	at com.esotericsoftware.kryo.io.Output.close(Output.java:173)
+	at uk.ac.imperial.lsds.seep.runtimeengine.SynchronousCommunicationChannel.reopenDownstreamDataSocket(SynchronousCommunicationChannel.java:193)
+	at uk.ac.imperial.lsds.seep.runtimeengine.OutputQueueWorker$2.run(OutputQueueWorker.java:170)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketException: Socket closed
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:118)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+	at com.esotericsoftware.kryo.io.Output.flush(Output.java:163)
+	... 4 more
+17:49:02.273 [Thread-1] INFO  u.a.i.l.s.r.SynchronousCommunicationChannel - Successfully connected data channel to /127.0.0.1
+17:49:02.273 [Thread-1] INFO  u.a.i.l.s.r.SynchronousCommunicationChannel - Socket send buffer size= 1313280
+17:49:02.273 [Thread-1] INFO  u.a.i.l.s.r.SynchronousCommunicationChannel - Socket set send buffer size= 16384
+17:49:02.273 [Thread-1] DEBUG u.a.i.l.s.r.OutputQueueWorker - Op -1 connected to downstream: 1
+17:49:03.270 [chw-/127.0.0.1-T-1] DEBUG u.a.i.l.s.comm.ControlHandlerWorker - Read control tuple in 995 ms,txnDelay=0
+17:49:03.271 [chw-/127.0.0.1-T-1] DEBUG u.a.i.l.s.comm.ControlHandlerWorker - Processed control tuple in 1 ms
+17:49:04.249 [NetRateMonitor] INFO  u.a.i.lsds.seep.manet.NetRateMonitor - Read routes: []
+17:49:04.249 [NetRateMonitor] INFO  u.a.i.lsds.seep.manet.NetRateMonitor - Parsing OLSRETX routes
+17:49:04.249 [NetRateMonitor] INFO  u.a.i.lsds.seep.manet.NetRateMonitor - Checking routes against upOpIds: {}
+17:49:04.249 [NetRateMonitor] INFO  u.a.i.lsds.seep.manet.NetRateMonitor - Up op costs: {}
+17:49:04.259 [chw-/127.0.0.1-T-1] DEBUG u.a.i.l.s.comm.ControlHandlerWorker - Read control tuple in 988 ms,txnDelay=1
+17:49:04.259 [chw-/127.0.0.1-T-1] DEBUG u.a.i.l.s.comm.ControlHandlerWorker - Processed control tuple in 0 ms
+17:49:04.274 [Thread-2] DEBUG u.a.i.l.s.r.OutputQueueWorker - Setting data with ts=1593812944274
+17:49:04.274 [Thread-1] DEBUG u.a.i.l.s.r.OutputQueueWorker - Op -1 exchanged ctrlData for 1
+17:49:04.274 [Thread-1] INFO  u.a.i.l.s.r.OutputQueueWorker - t=1593812944274, oq.sync -1 sending ts=1593812944274 for 1, current latency=0, oq latency=0
+17:49:04.274 [Thread-1] DEBUG u.a.i.l.s.r.OutputQueueWorker - No coalescing for 1: 0.0
+17:49:04.274 [Thread-1] DEBUG u.a.i.l.s.r.OutputQueueWorker - Op -1 sent ctrlData for 1, success=true
+17:49:05.274 [Thread-2] DEBUG u.a.i.l.s.r.OutputQueueWorker - Setting data with ts=1593812945274
+17:49:05.274 [Thread-1] DEBUG u.a.i.l.s.r.OutputQueueWorker - Op -1 exchanged ctrlData for 1
+17:49:05.274 [Thread-1] INFO  u.a.i.l.s.r.OutputQueueWorker - t=1593812945274, oq.sync -1 sending ts=1593812945274 for 1, current latency=0, oq latency=0
+17:49:05.274 [Thread-1] DEBUG u.a.i.l.s.r.OutputQueueWorker - No coalescing for 1: 0.0
+17:49:05.274 [Thread-1] DEBUG u.a.i.l.s.r.OutputQueueWorker - Op -1 sent ctrlData for 1, success=true
+17:49:05.280 [chw-/127.0.0.1-T-1] DEBUG u.a.i.l.s.comm.ControlHandlerWorker - Read control tuple in 1020 ms,txnDelay=1
+17:49:05.294 [chw-/127.0.0.1-T-1] DEBUG u.a.i.l.s.comm.ControlHandlerWorker - Processed control tuple in 14 ms
+17:49:06.260 [NetRateMonitor] INFO  u.a.i.lsds.seep.manet.NetRateMonitor - Read routes: []
+17:49:06.260 [NetRateMonitor] INFO  u.a.i.lsds.seep.manet.NetRateMonitor - Parsing OLSRETX routes
+17:49:06.261 [NetRateMonitor] INFO  u.a.i.lsds.seep.manet.NetRateMonitor - Checking routes against upOpIds: {}
+17:49:06.261 [NetRateMonitor] INFO  u.a.i.lsds.seep.manet.NetRateMonitor - Up op costs: {}
+17:49:06.274 [Thread-2] DEBUG u.a.i.l.s.r.OutputQueueWorker - Setting data with ts=1593812946274
+17:49:06.275 [Thread-1] DEBUG u.a.i.l.s.r.OutputQueueWorker - Op -1 exchanged ctrlData for 1
+17:49:06.275 [Thread-1] INFO  u.a.i.l.s.r.OutputQueueWorker - t=1593812946275, oq.sync -1 sending ts=1593812946274 for 1, current latency=1, oq latency=1
+17:49:06.275 [Thread-1] DEBUG u.a.i.l.s.r.OutputQueueWorker - No coalescing for 1: 0.0
+17:49:06.276 [Thread-1] DEBUG u.a.i.l.s.r.OutputQueueWorker - Op -1 sent ctrlData for 1, success=true
+17:49:06.281 [chw-/127.0.0.1-T-1] DEBUG u.a.i.l.s.comm.ControlHandlerWorker - Read control tuple in 987 ms,txnDelay=14
+17:49:06.281 [chw-/127.0.0.1-T-1] DEBUG u.a.i.l.s.comm.ControlHandlerWorker - Processed control tuple in 0 ms
+17:49:07.275 [Thread-2] DEBUG u.a.i.l.s.r.OutputQueueWorker - Setting data with ts=1593812947275
+17:49:07.276 [Thread-1] DEBUG u.a.i.l.s.r.OutputQueueWorker - Op -1 exchanged ctrlData for 1
+17:49:07.276 [Thread-1] INFO  u.a.i.l.s.r.OutputQueueWorker - t=1593812947276, oq.sync -1 sending ts=1593812947275 for 1, current latency=1, oq latency=1
+17:49:07.276 [Thread-1] DEBUG u.a.i.l.s.r.OutputQueueWorker - No coalescing for 1: 0.0
+17:49:07.277 [Thread-1] DEBUG u.a.i.l.s.r.OutputQueueWorker - Op -1 sent ctrlData for 1, success=true
+17:49:07.282 [chw-/127.0.0.1-T-1] DEBUG u.a.i.l.s.comm.ControlHandlerWorker - Read control tuple in 1000 ms,txnDelay=1
+17:49:07.282 [chw-/127.0.0.1-T-1] DEBUG u.a.i.l.s.comm.ControlHandlerWorker - Processed control tuple in 0 ms
+17:49:08.272 [NetRateMonitor] INFO  u.a.i.lsds.seep.manet.NetRateMonitor - Read routes: []
+17:49:08.273 [NetRateMonitor] INFO  u.a.i.lsds.seep.manet.NetRateMonitor - Parsing OLSRETX routes
+17:49:08.273 [NetRateMonitor] INFO  u.a.i.lsds.seep.manet.NetRateMonitor - Checking routes against upOpIds: {}
+17:49:08.273 [NetRateMonitor] INFO  u.a.i.lsds.seep.manet.NetRateMonitor - Up op costs: {}
+17:49:08.276 [Thread-2] DEBUG u.a.i.l.s.r.OutputQueueWorker - Setting data with ts=1593812948276
+17:49:08.276 [Thread-1] DEBUG u.a.i.l.s.r.OutputQueueWorker - Op -1 exchanged ctrlData for 1
+17:49:08.277 [Thread-1] INFO  u.a.i.l.s.r.OutputQueueWorker - t=1593812948277, oq.sync -1 sending ts=1593812948276 for 1, current latency=1, oq latency=1
+17:49:08.277 [Thread-1] DEBUG u.a.i.l.s.r.OutputQueueWorker - No coalescing for 1: 0.0
+17:49:08.277 [Thread-1] DEBUG u.a.i.l.s.r.OutputQueueWorker - Op -1 sent ctrlData for 1, success=true
+17:49:08.287 [chw-/127.0.0.1-T-1] DEBUG u.a.i.l.s.comm.ControlHandlerWorker - Read control tuple in 1005 ms,txnDelay=0
+17:49:08.288 [chw-/127.0.0.1-T-1] DEBUG u.a.i.l.s.comm.ControlHandlerWorker - Processed control tuple in 1 ms
+17:49:09.277 [Thread-2] DEBUG u.a.i.l.s.r.OutputQueueWorker - Setting data with ts=1593812949277
+17:49:09.277 [Thread-1] DEBUG u.a.i.l.s.r.OutputQueueWorker - Op -1 exchanged ctrlData for 1
+17:49:09.278 [Thread-1] INFO  u.a.i.l.s.r.OutputQueueWorker - t=1593812949278, oq.sync -1 sending ts=1593812949277 for 1, current latency=1, oq latency=1
+17:49:09.278 [Thread-1] DEBUG u.a.i.l.s.r.OutputQueueWorker - No coalescing for 1: 0.0
+17:49:09.278 [Thread-1] DEBUG u.a.i.l.s.r.OutputQueueWorker - Op -1 sent ctrlData for 1, success=true
+17:49:09.293 [chw-/127.0.0.1-T-1] DEBUG u.a.i.l.s.comm.ControlHandlerWorker - Read control tuple in 1005 ms,txnDelay=1
+17:49:09.294 [chw-/127.0.0.1-T-1] DEBUG u.a.i.l.s.comm.ControlHandlerWorker - Processed control tuple in 1 ms
+17:49:10.279 [Thread-2] DEBUG u.a.i.l.s.r.OutputQueueWorker - Setting data with ts=1593812950278
+17:49:10.279 [Thread-1] DEBUG u.a.i.l.s.r.OutputQueueWorker - Op -1 exchanged ctrlData for 1
+17:49:10.279 [Thread-1] INFO  u.a.i.l.s.r.OutputQueueWorker - t=1593812950279, oq.sync -1 sending ts=1593812950278 for 1, current latency=1, oq latency=1
+17:49:10.280 [Thread-1] DEBUG u.a.i.l.s.r.OutputQueueWorker - No coalescing for 1: 0.0
+17:49:10.280 [Thread-1] DEBUG u.a.i.l.s.r.OutputQueueWorker - Op -1 sent ctrlData for 1, success=true
+17:49:10.284 [NetRateMonitor] INFO  u.a.i.lsds.seep.manet.NetRateMonitor - Read routes: []
+17:49:10.285 [NetRateMonitor] INFO  u.a.i.lsds.seep.manet.NetRateMonitor - Parsing OLSRETX routes
+17:49:10.285 [NetRateMonitor] INFO  u.a.i.lsds.seep.manet.NetRateMonitor - Checking routes against upOpIds: {}
+17:49:10.285 [NetRateMonitor] INFO  u.a.i.lsds.seep.manet.NetRateMonitor - Up op costs: {}
+17:49:10.294 [chw-/127.0.0.1-T-1] DEBUG u.a.i.l.s.comm.ControlHandlerWorker - Read control tuple in 1000 ms,txnDelay=1
+17:49:10.295 [chw-/127.0.0.1-T-1] DEBUG u.a.i.l.s.comm.ControlHandlerWorker - Processed control tuple in 1 ms
+17:49:11.279 [Thread-2] DEBUG u.a.i.l.s.r.OutputQueueWorker - Setting data with ts=1593812951279
+17:49:11.280 [Thread-1] DEBUG u.a.i.l.s.r.OutputQueueWorker - Op -1 exchanged ctrlData for 1
+17:49:11.280 [Thread-1] INFO  u.a.i.l.s.r.OutputQueueWorker - t=1593812951280, oq.sync -1 sending ts=1593812951279 for 1, current latency=1, oq latency=1
+17:49:11.280 [Thread-1] DEBUG u.a.i.l.s.r.OutputQueueWorker - No coalescing for 1: 0.0
+17:49:11.281 [Thread-1] DEBUG u.a.i.l.s.r.OutputQueueWorker - Op -1 sent ctrlData for 1, success=true
+17:49:11.299 [chw-/127.0.0.1-T-1] DEBUG u.a.i.l.s.comm.ControlHandlerWorker - Read control tuple in 1004 ms,txnDelay=1
+17:49:11.304 [chw-/127.0.0.1-T-1] DEBUG u.a.i.l.s.comm.ControlHandlerWorker - Processed control tuple in 5 ms
+17:49:12.280 [Thread-2] DEBUG u.a.i.l.s.r.OutputQueueWorker - Setting data with ts=1593812952280
+17:49:12.281 [Thread-1] DEBUG u.a.i.l.s.r.OutputQueueWorker - Op -1 exchanged ctrlData for 1
+17:49:12.281 [Thread-1] INFO  u.a.i.l.s.r.OutputQueueWorker - t=1593812952281, oq.sync -1 sending ts=1593812952280 for 1, current latency=1, oq latency=1
+17:49:12.281 [Thread-1] DEBUG u.a.i.l.s.r.OutputQueueWorker - No coalescing for 1: 0.0
+17:49:12.282 [Thread-1] DEBUG u.a.i.l.s.r.OutputQueueWorker - Op -1 sent ctrlData for 1, success=true
+17:49:12.296 [NetRateMonitor] INFO  u.a.i.lsds.seep.manet.NetRateMonitor - Read routes: []
+17:49:12.297 [NetRateMonitor] INFO  u.a.i.lsds.seep.manet.NetRateMonitor - Parsing OLSRETX routes
+17:49:12.297 [NetRateMonitor] INFO  u.a.i.lsds.seep.manet.NetRateMonitor - Checking routes against upOpIds: {}
+17:49:12.297 [NetRateMonitor] INFO  u.a.i.lsds.seep.manet.NetRateMonitor - Up op costs: {}
+17:49:12.302 [chw-/127.0.0.1-T-1] DEBUG u.a.i.l.s.comm.ControlHandlerWorker - Read control tuple in 998 ms,txnDelay=5
+17:49:12.303 [chw-/127.0.0.1-T-1] DEBUG u.a.i.l.s.comm.ControlHandlerWorker - Processed control tuple in 1 ms
+17:49:13.281 [Thread-2] DEBUG u.a.i.l.s.r.OutputQueueWorker - Setting data with ts=1593812953281
+17:49:13.281 [Thread-1] DEBUG u.a.i.l.s.r.OutputQueueWorker - Op -1 exchanged ctrlData for 1
+17:49:13.281 [Thread-1] INFO  u.a.i.l.s.r.OutputQueueWorker - t=1593812953281, oq.sync -1 sending ts=1593812953281 for 1, current latency=0, oq latency=0
+17:49:13.281 [Thread-1] DEBUG u.a.i.l.s.r.OutputQueueWorker - No coalescing for 1: 0.0
+17:49:13.281 [Thread-1] DEBUG u.a.i.l.s.r.OutputQueueWorker - Op -1 sent ctrlData for 1, success=true
+17:49:13.304 [chw-/127.0.0.1-T-1] DEBUG u.a.i.l.s.comm.ControlHandlerWorker - Read control tuple in 1001 ms,txnDelay=1
+17:49:13.305 [chw-/127.0.0.1-T-1] DEBUG u.a.i.l.s.comm.ControlHandlerWorker - Processed control tuple in 1 ms
+17:49:14.281 [Thread-2] DEBUG u.a.i.l.s.r.OutputQueueWorker - Setting data with ts=1593812954281
+17:49:14.282 [Thread-1] DEBUG u.a.i.l.s.r.OutputQueueWorker - Op -1 exchanged ctrlData for 1
+17:49:14.282 [Thread-1] INFO  u.a.i.l.s.r.OutputQueueWorker - t=1593812954282, oq.sync -1 sending ts=1593812954281 for 1, current latency=1, oq latency=1
+17:49:14.282 [Thread-1] DEBUG u.a.i.l.s.r.OutputQueueWorker - No coalescing for 1: 0.0
+17:49:14.282 [Thread-1] DEBUG u.a.i.l.s.r.OutputQueueWorker - Op -1 sent ctrlData for 1, success=true
+17:49:14.308 [NetRateMonitor] INFO  u.a.i.lsds.seep.manet.NetRateMonitor - Read routes: []
+17:49:14.309 [NetRateMonitor] INFO  u.a.i.lsds.seep.manet.NetRateMonitor - Parsing OLSRETX routes
+17:49:14.309 [NetRateMonitor] INFO  u.a.i.lsds.seep.manet.NetRateMonitor - Checking routes against upOpIds: {}
+17:49:14.309 [NetRateMonitor] INFO  u.a.i.lsds.seep.manet.NetRateMonitor - Up op costs: {}
+17:49:14.309 [chw-/127.0.0.1-T-1] DEBUG u.a.i.l.s.comm.ControlHandlerWorker - Read control tuple in 1004 ms,txnDelay=1
+17:49:14.310 [chw-/127.0.0.1-T-1] DEBUG u.a.i.l.s.comm.ControlHandlerWorker - Processed control tuple in 1 ms

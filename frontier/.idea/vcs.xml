@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/seep-system/examples/frontier.simple-lag-test" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/seep-system/examples/stateful-test" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/seep-system/examples/stateful-window-query" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/seep-system/examples/statefull-simple-test" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/seep-system/examples/statefull-test" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/seep-system/examples/stateless-simple-ping-test" vcs="Git" />
+  </component>
+</project>
