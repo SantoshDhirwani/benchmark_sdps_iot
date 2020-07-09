@@ -4,8 +4,8 @@ node n1 {
 	hostname EmaneNode
 	!
 	interface wireless
-	 ip address 192.168.0.0/32
 	 ipv6 address 2001:0::0/128
+	 ip address 10.20.0.0/24
 	!
 	mobmodel
 	coreapi
@@ -24,8 +24,8 @@ node n1 {
 	}
     }
     canvas c1
-    iconcoords {408.0 168.0}
-    labelcoords {408.0 200.0}
+    iconcoords {384.0 216.0}
+    labelcoords {384.0 248.0}
     interface-peer {e0 n2}
     interface-peer {e1 n3}
     interface-peer {e2 n4}
@@ -38,13 +38,13 @@ node n2 {
 	hostname ClusterNode
 	!
 	interface eth0
-	 ip address 192.168.0.1/32
 	 ipv6 address 2001:0::1/128
+	 ip address 10.20.0.1/24
 	!
     }
     canvas c1
-    iconcoords {168.0 168.0}
-    labelcoords {168.0 200.0}
+    iconcoords {384.0 96.0}
+    labelcoords {384.0 128.0}
     interface-peer {eth0 n1}
     services {FlinkClusterService OSPFv3MDR zebra IPForward}
 }
@@ -57,14 +57,22 @@ node n3 {
 	!
 	interface eth0
 	 ipv6 address 2001:0::2/128
-	 ip address 192.168.0.5/32
+	 ip address 10.20.0.2/24
 	!
     }
     canvas c1
-    iconcoords {624.0 264.0}
-    labelcoords {624.0 296.0}
+    iconcoords {624.0 240.0}
+    labelcoords {624.0 272.0}
     interface-peer {eth0 n1}
     services {GeneratorService OSPFv3MDR zebra IPForward}
+    custom-config {
+	custom-config-id service:GeneratorService
+	custom-command GeneratorService
+	config {
+	startidx=1
+	starttime=5
+	}
+    }
 }
 
 node n4 {
@@ -75,14 +83,22 @@ node n4 {
 	!
 	interface eth0
 	 ipv6 address 2001:0::3/128
-	 ip address 192.168.0.2/32
+	 ip address 10.20.0.3/24
 	!
     }
     canvas c1
-    iconcoords {216.0 336.0}
-    labelcoords {216.0 368.0}
+    iconcoords {192.0 240.0}
+    labelcoords {192.0 272.0}
     interface-peer {eth0 n1}
     services {FlinkJobService OSPFv3MDR zebra IPForward}
+    custom-config {
+	custom-config-id service:FlinkJobService
+	custom-command FlinkJobService
+	config {
+	startidx=2
+	starttime=10
+	}
+    }
 }
 
 link l1 {
