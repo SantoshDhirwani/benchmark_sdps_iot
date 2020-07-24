@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="stateful-window-query">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/3503query.jar!/" />
+      <root url="jar://$PROJECT_DIR$/3501query.jar!/" />
+      <root url="jar://$PROJECT_DIR$/3502query.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
