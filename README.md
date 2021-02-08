@@ -3,4 +3,4 @@ Team SD - Big Data Analytics Project - Technical University of Berlin - SoSe 202
 
 ## Visitors Counts
 
-![Visitor Count](https://profile-counter.glitch.me/{SantoshDhirwani}/count.svg)
+![Visitor Count](https://profile-counter.glitch.me/bdapro-sd-20/count.svg)
